@@ -9,9 +9,6 @@ WORKDIR /activity-app
 
 COPY pom.xml .
 COPY src ./src
-COPY mvnw .
-COPY mvnw.cmd .
-COPY .mvn .mvn
 
 RUN mvn clean package -DskipTests
 
